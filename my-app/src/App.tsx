@@ -20,7 +20,6 @@ function App() {
 
   useEffect(() => {
     const unsub = onAuthStateChanged(auth, (user) => {
-      console.log(user);
       if (user) {
         navigate("/home");
       }
